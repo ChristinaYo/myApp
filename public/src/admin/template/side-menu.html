@@ -1,0 +1,17 @@
+<ul class="sidebar-menu" ng-controller="SideMenuCtrl">
+	<li class="header">主菜单</li>
+  <li ng-repeat="menu1 in menulist" class="treeview">
+		<a href="javascript:void(0)" ng-click="selectMenu(menu1)">
+			<i ng-class="menu1.icon"></i>
+			<span>{{menu1.name}}</span>
+		</a>
+		<ul class="treeview-menu" ng-class="{true:'showChildren'}[isSelectMenu]">
+			<li ng-repeat="menu2 in menu1.children">
+				<a href="javascript:void(0)">
+					<i ng-class="menu2.icon"></i>
+					<span>{{menu2.name}}</span>
+				</a>
+			</li>
+		</ul>
+	</li>
+</ul> 

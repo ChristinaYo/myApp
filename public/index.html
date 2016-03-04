@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>myApp</title>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="lib/adminlte/css/AdminLTE.css">
+  <link rel="stylesheet" href="lib/adminlte/css/skins/_all-skins.css">
+</head>
+<body ng-controller="IndexCtrl">
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header" >
+        <a href="" class="navbar-brand" >我的事务管理</a>
+      </div>
+    </div>
+  </nav>
+  <div ng-include="'src/admin/template/side-menu.html'"></div>
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/ui-router/angular-ui-router.min.js"></script>
+  <script src="lib/adminlte/adminlte.js"></script>
+  <script src="app.js"></script>
+  <script src="src/admin/controller/console.js"></script>
+  <script src="src/admin/controller/sidemenu.js"></script>
+  
+  
+</body>
+</html>
