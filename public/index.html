@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
+
 <head>
   <meta charset="UTF-8">
   <title>myApp</title>
-  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="libs/adminlte/css/AdminLTE.css" type="text/css">
+  <link rel="stylesheet" href="libs/adminlte/css/skins/_all-skins.css" type="text/css">
+
+  <!--<link href="libs/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />-->
+  <!-- FontAwesome 4.3.0 -->
+  <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <!-- Ionicons 2.0.0 -->
+  <link href="libs/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+  <!--select2-->
+  <link href="libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/admin.css">
-  <link rel="stylesheet" href="lib/adminlte/css/AdminLTE.css">
-  <link rel="stylesheet" href="lib/adminlte/css/skins/_all-skins.css">
+  <link href="css/controls.css" rel="stylesheet" type="text/css" />
+
+
+
+
 </head>
-<body ng-controller="IndexCtrl">
+
+<body ng-controller="IndexCtrl"  class="skin-blue sidebar-mini fixed">
   <nav class="navbar navbar-inverse">
     <div class="container">
-      <div class="navbar-header" >
-        <a href="" class="navbar-brand" >我的事务管理</a>
+      <div class="navbar-header">
+        <a href="" class="navbar-brand">我的事务管理</a>
       </div>
     </div>
   </nav>
-  <div ng-include="'src/admin/template/side-menu.html'"></div>
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="lib/angular/angular.js"></script>
-  <script src="lib/ui-router/angular-ui-router.min.js"></script>
-  <script src="lib/adminlte/adminlte.js"></script>
+  <!--<div ng-include="'src/admin/template/side-menu.html'"></div>-->
+  <div ng-include="'src/admin/template/aside.html'"></div>
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="libs/angular/angular.js"></script>
+  <script src="libs/ui-router/angular-ui-router.min.js"></script>
+  <script src="libs/adminlte/adminlte.js"></script>
   <script src="app.js"></script>
   <script src="src/admin/controller/console.js"></script>
+  <script src="src/admin/controller/sidebar.js"></script>
   <script src="src/admin/controller/sidemenu.js"></script>
   
   
+  <script src="src/auth/controller/myCardList.js"></script>
+
+
 </body>
+
 </html>
